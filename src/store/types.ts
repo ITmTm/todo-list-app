@@ -84,7 +84,7 @@ interface AddTaskAction {
 		}
 }
 
-interface DeletedTaskAction {
+interface DeleteTaskAction {
 		type: typeof DELETE_TASK;
 		payload: {
 				task: Task;
@@ -134,3 +134,6 @@ interface SetNotificationAction {
 		}
 }
 
+export type ListsAction = AddListAction | GetListsAction | GetListByIdAction | SetListIdToDeleteAction | SetListToEditAction | DeleteListAction | UpdateListAction | SetSelectedListAction | AddTaskAction | DeleteTaskAction | SetTaskToDeleteAction | UnsetTaskToDeleteAction | EditTaskAction | SetTaskToEditAction | UnsetTaskToEditAction;
+
+export type NotificationAction = SetNotificationAction;
