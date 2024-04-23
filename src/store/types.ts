@@ -137,3 +137,24 @@ interface SetNotificationAction {
 export type ListsAction = AddListAction | GetListsAction | GetListByIdAction | SetListIdToDeleteAction | SetListToEditAction | DeleteListAction | UpdateListAction | SetSelectedListAction | AddTaskAction | DeleteTaskAction | SetTaskToDeleteAction | UnsetTaskToDeleteAction | EditTaskAction | SetTaskToEditAction | UnsetTaskToEditAction;
 
 export type NotificationAction = SetNotificationAction;
+
+export interface ListState {
+		lists: Lists;
+		listIdToDelete: string;
+		listToEdit: List | null;
+		listById: List | null;
+		selectedList: List | null;
+		taskToDelete: {
+				task: Task;
+				list: List;
+		} | null;
+		taskToEdit: {
+				task: Task;
+				list: List
+		} | null;
+}
+
+export interface NotificationState {
+		message: string;
+		type: string;
+}
