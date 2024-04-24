@@ -1,4 +1,15 @@
-import { ADD_LIST, DELETE_LIST, GET_LIST_BY_ID, GET_LISTS, Lists, ListsAction, ListState, SET_LIST_TO_EDIT, SET_LISTID_TO_DELETE } from "../types";
+import {
+		ADD_LIST,
+		DELETE_LIST,
+		GET_LIST_BY_ID,
+		GET_LISTS,
+		Lists,
+		ListsAction,
+		ListState,
+		SET_LIST_TO_EDIT,
+		SET_LISTID_TO_DELETE,
+		UPDATE_LIST
+} from "../types";
 
 const initialState: ListState = {
 		lists: {},
