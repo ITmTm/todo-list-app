@@ -10,6 +10,7 @@ const rootReducer = combineReducers({
 		notification: notificationReducer
 });
 
+
 // @ts-ignore
 const store = createStore(rootReducer, composeWithDevTools());
 
