@@ -76,9 +76,10 @@ interface SetSelectedListAction {
 		payload: string;
 }
 
+
 interface AddTaskAction {
 		type: typeof ADD_TASK;
-		patload: {
+		payload: {
 				task: Task;
 				list: List;
 		}
