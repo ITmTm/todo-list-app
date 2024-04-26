@@ -1,7 +1,7 @@
 # TodoList with React, Redux and TypeScript
 A simple TodoList with React, Redux and TypeScript
 
-[![DEMO](https://img.shields.io/badge/live%20demo-0073cf?style=for-the-badge&logoColor=white)](https://joselyndrf.github.io/react-redux-typescript-todolist)
+[![DEMO](https://img.shields.io/badge/live%20demo-0073cf?style=for-the-badge&logoColor=white)](https://todo-list-app-one-mu.vercel.app/)
 
 <hr>
 
