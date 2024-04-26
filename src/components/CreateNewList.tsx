@@ -28,13 +28,15 @@ const CreateNewList: FC = () => {
 
 				// @ts-ignore
 				dispatch(addList(newList));
+				// @ts-ignore
+				dispatch(setNotification(`New list("${newList.name}") created!`));
 				setListName('');
 		}
 
 		return (
 				<div className="card mb-5">
 						<div className="card-header">
-								<p className="card-header-title">Create new List</p>
+								<p className="card-header-title is-justify-content-center">Create new List</p>
 						</div>
 
 						<div className="card-content">
