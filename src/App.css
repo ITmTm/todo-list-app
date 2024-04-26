@@ -32,6 +32,10 @@ tr.completed td:first-child {
     text-decoration: line-through;
 }
 
+.modal-card-foot {
+    column-gap: 10px;
+}
+
 .notification {
     position: fixed;
     top: 20px;
