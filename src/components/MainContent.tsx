@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import SelectList from "./SelectList";
 import { RootState } from "../store/store";
 import AddNewTask from "./AddNewTask";
+import Tasks from "./Tasks";
 
 const MainContent: FC = () => {
 		const selectedList = useSelector((state: RootState) => state.list.selectedList);
@@ -16,6 +17,8 @@ const MainContent: FC = () => {
 										selectedList &&
 											<>
 													<AddNewTask list={selectedList} />
+													<hr/>
+													<Tasks tasks={selectedList.tasks} />
 											</>
 								}
 						</div>
